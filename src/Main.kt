@@ -26,7 +26,6 @@ fun main() {
         }
     }
 }
-
 fun loginKasirUser(){
     println("-----------------------------")
     println("Selamat Datang Di Synrgy Mart")
