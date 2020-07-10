@@ -14,7 +14,7 @@ class Dashboard {
         print("Menu Pilihan Anda : ")
         when (readLine()!!) {
             "1" -> {
-                processPelangganMenu(username)
+                processPelangganMenu()
             }
             "0" -> {
                 println(" ")
@@ -29,7 +29,7 @@ class Dashboard {
         }
     }
 
-    fun processPelangganMenu(username: String){
+    private fun processPelangganMenu(){
         println("--------------------------------")
         println("Checkout Pelanggan")
         println("--------------------------------")
@@ -45,7 +45,7 @@ class Dashboard {
                 println("uNDERcoNTRAINTER")
             }
             "2" -> {
-                pelangganNonMember(username)
+                pelangganNonMember()
             }
             else -> {
                 println("Silahkan Cek Note")
@@ -54,7 +54,7 @@ class Dashboard {
         }
     }
 
-    fun pelangganNonMember(username: String){
+    private fun pelangganNonMember(){
         println("-----------------------------")
         println("Checkout Pelanggan Non Member")
         println("-----------------------------")
@@ -65,8 +65,11 @@ class Dashboard {
         print("Input Jumlah Barang : ")
         val checkJumlahBarang = Scanner(System.`in`).nextInt()
         println("-----------------------------")
+
+
         print("Input Barang Lagi? (Ya/Tidak) : ")
         val checkResponUser = readLine()!!
+
         if(checkResponUser == "Tidak" || checkResponUser == "tidak"){
             checkOutBarang(checkNamaBarang,checkHargaSatuan,checkJumlahBarang)
         }
@@ -76,7 +79,7 @@ class Dashboard {
 //        getBarang.nyimpanBarangCheckOut(checkNamaBarang,checkJumlahBarang,checkHargaSatuan,username)
     }
 
-    fun checkOutBarang(checkNamaBarang:String,checkHargaBarang:Int,checkJumlahBarang:Int){
+    private fun checkOutBarang(checkNamaBarang:String, checkHargaBarang:Int, checkJumlahBarang:Int){
         println("-----------------------------")
         println("Checkout Pelanggan Non Member")
         println("-----------------------------")
