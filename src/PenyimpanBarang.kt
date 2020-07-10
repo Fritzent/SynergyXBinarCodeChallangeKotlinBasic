@@ -1,0 +1,1 @@
+data class PenyimpanBarang(val namaBarang: String,val jumlahBarang: String,val hargaBarang: String)
