@@ -1,3 +1,8 @@
+import kasirHandel.Member
+import kasirHandel.NonMember
+
+//import KasirHandel.NonMember
+
 class Dashboard {
     fun dashboardUserLogin(username: String){
         println("------------------------")
@@ -39,12 +44,15 @@ class Dashboard {
         print("Menu Pilihan Anda : ")
         when (readLine()!!) {
             "1" -> {
-                val member = Member()
-                member.member()
+                println("==========================")
+                println("Checkout Pelanggan Member ")
+                println("==========================")
+                println("Input Nama Member : ")
+                val namaMember = readLine().toString()
+                Member(namaMember).inputPembelianBarang()
             }
             "2" -> {
-                val nonMember = NonMember()
-                nonMember.nonMember()
+                NonMember().inputPembelianBarang()
             }
             else -> {
                 println("Silahkan Cek Note")
@@ -53,9 +61,3 @@ class Dashboard {
         }
     }
 }
-
-//TODO LOGIC
-//TODO User Input nama,harga,jumlah
-//TODO Inputan semua masuk ke penampung
-//TODO di checkoutnya akses ke penampungnya
-//TODO buatnya gimana !!!! -wawaadawndaadb

@@ -15,9 +15,9 @@ class MenuStart {
     }
 
     fun pelangganMember(){
-        println("1. Pelanggan Member")
+        println("1. Pelanggan KasirHandel.Member")
     }
     fun pelangganNonMember(){
-        println("2. Pelanggan Non-Member")
+        println("2. Pelanggan Non-KasirHandel.Member")
     }
 }
