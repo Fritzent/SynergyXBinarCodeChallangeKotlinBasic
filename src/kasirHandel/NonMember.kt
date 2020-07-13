@@ -77,10 +77,10 @@ class NonMember : Anggota() {
                     "Maka mendapatkan potongan sebesar 4.1% " +
                     "Cukup membayar ${totalBarang.IDR()}")
         }
-        pembayaran(totalBarang)
+        hitungJumlahBelanja(totalBarang)
     }
 
-    override fun pembayaran(totalBayar: Int){
+    override fun hitungJumlahBelanja(totalBayar: Int){
         println("=============================")
         println("Checkout Pelanggan Non Member")
         println("=============================")

@@ -75,10 +75,10 @@ class Member (private val nama: String): Anggota() {
                     "Maka mendapatkan potongan sebesar 9.5% " +
                     "$nama cukup membayar ${totalBarang.idr()}")
         }
-        pembayaran(totalBarang)
+        hitungJumlahBelanja(totalBarang)
     }
 
-    override fun pembayaran(totalBayar: Int){
+    override fun hitungJumlahBelanja(totalBayar: Int){
         println("===============================")
         println("Checkout Pelanggan Member $nama")
         println("===============================")
